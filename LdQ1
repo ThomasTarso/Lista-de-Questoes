@@ -1,5 +1,5 @@
 fun main() {
-    // A diferença de um Arquivo Kotlin e um arquivo Java é que
+    // A diferença de um Arquivo Kotlin e um arquivo Java é que, a Kotlin foi criada com o objetivo de simplificar o desenvolvimento de aplicações para a plataforma Java
 
     var a: Int = 10
     val b = 5
