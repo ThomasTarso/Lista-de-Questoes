@@ -1,0 +1,186 @@
+fun main() {
+    // A diferença de um Arquivo Kotlin e um arquivo Java é que
+
+    var a: Int = 10
+    val b = 5
+    // A variável pode ser mudada e a constante não
+
+    var c: Double = 1.16
+    // Double ou Float
+
+    var d = "Texto"
+    var e = 1
+    // String e Int
+
+    var f = 1
+    var g = 1.16F
+    //Int e Float ou Double
+
+    var h = 1
+    var i = 2
+    h + i
+    //
+
+    var j: Boolean = 5 < 3 && 2 < 4
+    // false, pois o número 5 é maior que o 3
+
+    var k: Boolean = !(10 > 5 || 3 < 1)
+    // false, por mais que o resultado na expressao || torne-se verdadeira o ! inverte o resultado
+
+    var l1: Int
+    var l2: Int
+    println("Digite o primeiro número: ")
+    l1 = readln().toInt()
+
+    println("Digite o segundo número: ")
+    l2 = readln().toInt()
+
+    var somal = l1 + l2
+
+    println("A soma dos númeoros é: $somal")
+
+    //
+
+    var m: Int
+    println("Digite um número inteiro: ")
+    m = readln().toInt()
+
+    var mquadrado = m * m
+
+    println("O número ao quadrado é: $mquadrado")
+
+    //
+
+    var nnome: String
+    var nidade: Int
+    println("Digite seu nome: ")
+    nnome = readln().toString()
+
+    println("Digite sua idade: ")
+    nidade = readln().toInt()
+
+    println("Seja Bem Vindo(a)!! $nnome De $nidade Anos")
+
+    //
+
+    //Comentários servem para que o programador possa escrever anotações que não interfiram no código
+
+    //
+
+    var oNota1: Int
+    var oNota2: Int
+
+    println("Digite sua primeira nota ")
+    oNota1 = readln().toInt()
+
+    println("Digite sua segunda nota ")
+    oNota2 = readln().toInt()
+
+    var oMedia: Int = oNota1 + oNota2
+
+    if (oMedia >= 7) {
+        println("Você foi Aprovado!")
+    } else {
+        println("Você foi Reprovado!")
+    }
+
+    //
+
+    var p: Int
+    println("Entre com um número: ")
+    p = readln().toInt()
+
+
+    if (p % 2 == 0) {
+        println("$p É Par")
+    } else {
+        println("p É Impar")
+    }
+
+    //
+
+    var q: Int
+    println("Entre com um número: ")
+    q = readln().toInt()
+
+    if (q > 0) {
+        println("$q é positivo")
+    } else if (q < 0) {
+        println("$q é negativo")
+    } else {
+        println(q)
+    }
+
+    //
+
+    var r: Int
+    println("Digite sua idade: ")
+    r = readln().toInt()
+
+    if (r >= 18) {
+        println("Você é maior de idade")
+    } else {
+        println("Você não é maior de idade")
+    }
+
+    //
+
+    println("Entre com um número para o dia da semana: ")
+    val s1 = readln().toInt()
+    val s2 = when (s1) {
+        1 -> "Domingo"
+        2 -> "Segunda-feira"
+        3 -> "Terça-feira"
+        4 -> "Quarta-feira"
+        5 -> "Quinta-feira"
+        6 -> "Sexta-feira"
+        7 -> "Sábado"
+
+        else -> "Dia inválido"
+    }
+    println(s2)
+
+    //
+
+    println("Entre com um animal: ")
+    val t1 = readln().toString()
+    val t2 = when (t1) {
+        "Cachorro", "Macaco", "Gato", "Leão" -> "Mamífero"
+        "Passaro", "Galinha", "Penguim", "Tucanp" -> "Ave"
+        "Tartaruga", "Cobra", "Jacaré", "Lagarto" -> "Réptil"
+        else -> "Animal Não Encontrado"
+    }
+    println(t2)
+
+    //
+
+    println("Entre com uma letra: ")
+    val u1 = readln().toString()
+    val u2 = when (u1) {
+        "a", "e", "i", "o", "u" -> "Vogal"
+        "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z" -> "Consoante"
+        else -> "Isso não é uma letra"
+    }
+    println(u2)
+
+    //
+
+    println("Entre com um número do mês: ")
+    val v1 = readln().toInt()
+    val v2 = when (v1) {
+        1 -> "janeiro"
+        2 -> "fevereiro"
+        3 -> "Março"
+        4 -> "Abril"
+        5 -> "Maio"
+        6 -> "Junho"
+        7 -> "Julho"
+        8 -> "Agsoto"
+        9 -> "Setembro"
+        10 -> "Outubro"
+        11 -> "novembro"
+        12 -> "Dezembro"
+        else -> "Mês inválido"
+    }
+    println(v2)
+}
